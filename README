@@ -15,14 +15,14 @@ into a Launchpad fork of the Beautiful Soup trunk.
 
 
 99.999% of the credit for Old Beautiful Soup goes to Leonard Richardson. Little
-tweaks are nothing compared to the work he put into Beautiful Soup. 
+tweaks are nothing compared to the work he put into Beautiful Soup.
 
 ==Cautions==
 This version of Beautiful Soup isn't significantly faster in reality than
 previous versions. There is no improvement in parsing speed, which usually
 dwarfs the time taken by tree queries.
 
-There are several properties and functions here that 
+There are several properties and functions here that
 
 ==Additional Features from 3.0.7a==
 Tag.replaceWithChildren()

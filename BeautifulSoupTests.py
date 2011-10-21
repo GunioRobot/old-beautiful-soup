@@ -16,7 +16,7 @@ class SoupTest(unittest.TestCase):
         if rep == None:
             rep = toParse
         self.assertEqual(str(c(toParse)), rep)
-    
+
     def assertSame(self, node1, node2):
         self.assertTrue(node1 is node2)
 
@@ -189,7 +189,7 @@ class StringEmUp(SoupTest):
 
 class AllText(SoupTest):
     "Tests the use of 'text' to get all of string content from the tag."
-    
+
     def testText(self):
         soup = BeautifulSoup("<ul><li>spam</li><li>eggs</li><li>cheese</li>")
         self.assertEquals(soup.ul.text, "spameggscheese")
@@ -368,7 +368,7 @@ class WriteOnlyCode(SoupTest):
         self.assertEqual(f.previousSibling, weText)
         self.assertEqual(f.nextSibling, None)
         self.assertEqual(weText.nextSibling, f)
-    
+
     def testReplaceWithChildren(self):
         soup = BeautifulStoneSoup(
             "<top><replace><child1/><child2/></replace></top>",
@@ -437,7 +437,7 @@ class WriteOnlyCode(SoupTest):
         self.assertEqual(three.previous, one)
         self.assertEqual(one.parent.nextSibling, three)
         self.assertEqual(three.previousSibling, soup.a)
-        
+
     def testClear(self):
         soup = BeautifulSoup("<ul><li></li><li></li></ul>")
         soup.ul.clear()

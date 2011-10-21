@@ -26,7 +26,7 @@ if not result.wasSuccessful():
             desc = case.shortDescription()
             if desc:
                 print desc
-            print error        
+            print error
     print '''If you see an error like: "'ascii' codec can't encode character...", see\nthe Beautiful Soup documentation:\n http://www.crummy.com/software/BeautifulSoup/documentation.html#Why%20can't%20Beautiful%20Soup%20print%20out%20the%20non-ASCII%20characters%20I%20gave%20it?'''
     print "This might or might not be a problem depending on what you plan to do with\nBeautiful Soup."
     if sys.argv[1] == 'sdist':
@@ -54,7 +54,7 @@ setup(name="BeautifulSoup",
       license="BSD",
       download_url="http://www.crummy.com/software/BeautifulSoup/download/"
       )
-    
+
     # Send announce to:
     #   python-announce@python.org
     #   python-list@python.org
